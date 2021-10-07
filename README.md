@@ -39,7 +39,7 @@ import { SimpleNodeCsv } from './simple-node-csv';
 // "a","b"
 // 1,2
 
-SimpleNodeCsv.appendFile(input, ",");
+SimpleNodeCsv.csv2obj(input, ",");
 
 // output
 // {a: 1, b:2}
