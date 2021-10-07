@@ -16,8 +16,31 @@ import { SimpleNodeCsv } from './simple-node-csv';
 SimpleNodeCsv.appendFile(path, {a: 1, b:2});
 SimpleNodeCsv.appendFile(path, {a: 2, c:3});
 
-// Output
+// output
 // "a","b","c"
 // 1,2,
 // 1,,3
+```
+
+```js
+import { SimpleNodeCsv } from './simple-node-csv';
+
+SimpleNodeCsv.obj2csv({a: 1, b:2}, ",");
+
+// output
+// "a","b"
+// 1,2
+```
+
+```js
+import { SimpleNodeCsv } from './simple-node-csv';
+
+// input
+// "a","b"
+// 1,2
+
+SimpleNodeCsv.appendFile(input, ",");
+
+// output
+// {a: 1, b:2}
 ```
